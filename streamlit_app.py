@@ -13,7 +13,8 @@ my_fruit_lis = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com
 streamlit.dataframe(my_fruit_lis)
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-streamlit.multiselect("Pick some fruits:", list(my_fruit_lis.index)) 
+fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_lis.index),[Avocado,Strawberries]) 
+fruits_to_show = my_fruit_lis.loc[fruits_selected]
 
 # Display the table on the page.
 
