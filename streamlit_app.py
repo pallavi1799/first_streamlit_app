@@ -17,4 +17,4 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_lis.index))
 
 # Display the table on the page.
 
-my_fruit_lis = my_fruit_lis.set_index('Fruit')
+my_fruit_lis = my_fruit_lis.index('Fruit')
