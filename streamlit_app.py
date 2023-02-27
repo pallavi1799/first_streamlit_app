@@ -1,3 +1,5 @@
+streamlit.stop()
+
 
 import streamlit
 streamlit.title("My Mom's New Healthy Diner")
@@ -41,4 +43,6 @@ streamlit.dataframe(my_data_rows)
 
 fruit_choic = streamlit.text_input('What fruit would you like to add?', 'jackfruit')
 streamlit.write('Thanks for adding ', fruit_choic)
+
+
 
